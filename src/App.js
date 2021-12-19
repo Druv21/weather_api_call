@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import './App.css';
-const baseUrl="http://api.openweathermap.org/data/2.5/weather?";
+const baseUrl="https://api.openweathermap.org/data/2.5/weather?";
 const apiKey="2abe78ccdc3580d00b9cb312be79c29c";
 function App() {
 
