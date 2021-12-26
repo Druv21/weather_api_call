@@ -11,11 +11,10 @@ function App() {
          const resdata= await fetchApi(input);
          console.log(resdata);
          const actual= resdata.data;
-         setCity(actual.main);
+         setCity(actual.main);  
          console.log({city});
-         //return resdata;
        }catch(error){
-    console.log(error.message);
+    alert("Error!! Please enter a valid city.");
     }
   }
 
@@ -25,8 +24,8 @@ function App() {
 
   return(
    <div className="App">
-     <div className="card">
-       <h2 className="title"><i className="fa fa-cloud"></i>Weather App</h2>
+     <div className="details">
+       <h2 className="title"><i className="fa fa-cloud"></i> Weather App</h2>
        <div className="search-form"> 
          <input type="text" placeholder="Enter your city name" value={input} onChange={(event)=>{setInput(event.target.value)}}/>
          <button type="button" onClick={()=>getData()}>Search</button>
@@ -35,10 +34,10 @@ function App() {
          <h4>Live Weather Condition</h4>
          {!city?(<p>No Data Found</p>):( 
             <>
-            <div className="temperature">
+            <div className="temp">
               <h1>{city.temp}&deg;C</h1>
             </div>
-            <div className="location">
+            <div className="place">
               <h3><i className="fa fa-street-view"></i>{input}</h3>
             </div>
             <div className="temperature-range">

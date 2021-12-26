@@ -4,7 +4,7 @@
   padding-top: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.card{
+.details{
   position: relative; 
   width: 70%; 
   height: 70%;
@@ -65,7 +65,7 @@
 }
 .main-container h4{
   font-size: 25px;
-  font-weight: 800;
+  font-weight: 900;
 }
 .main-container .temperature-range h6{
   font-size: 15px;
@@ -110,11 +110,14 @@
     width: 12%;
   }
 }
-.temperature h1{
+.temp h1{
   font-size: 30px;
   font-weight: 900;
 }
-.location h3 i{
+.place h3{
+  font-size: 25px;
+}
+.place h3 i{
   margin-right: 10px;
   animation: locationicon 2s infinite;
 }
