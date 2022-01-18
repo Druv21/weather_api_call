@@ -4,123 +4,140 @@
   padding-top: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .details{
-  position: relative; 
-  width: 70%; 
+  width: 50%; 
   height: 70%;
   margin: auto;
-  margin-bottom: 10px;
-  margin-top: 3%; 
-  background: linear-gradient(#4840be 10%, #6380ce 90%);
+  margin-top: 1%; 
+  background: url("https://miro.medium.com/max/2560/1*GsImz-edoeuqCMfKxDus0w.jpeg");
   background-size: cover;
-  box-shadow: 0px 2px 0px 2px #000;
+  box-shadow: 0px 1px 0px 1px #000;
   border-radius: 10px;
-  padding: 20px;
+  padding: 10px;
 }
+
 .title{
-  color: #fff;
+  color: #1433ca;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 35px;
 }
-.search-form{
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+.search-form .btn{
+  padding-left: 10px;
 }
+
 .search-form input{
-  width: 70%;
+  width: 50%;
   height: 35px;
   padding: 5px;
-  border: 2px solid #000000;
-  background: #000000;
+  border: 1px solid #000000;
+  background: #1a1919;
   color: #fff;
   padding-left: 10px;
   font-size: 20px;
   border-radius: 10px;
-  margin: 0 auto;
 }
+
 .search-form button{
   width: 10%;
   height: 50px;
   padding: 5px;
   border: none;
   border-radius: 20px;
-  background: linear-gradient(45deg, #8e0e00 30%, #1F1c18 70%);
+  background: linear-gradient(45deg, #961b0d 30%, #302b26 60%);
   font-weight: 500;
   font-size: 20px;
   color: #fff;
   cursor: pointer;
 }
+
 .search-form button:hover{
-  background: linear-gradient(45deg, #FFAFBD 30%, #ffc3a0 90%);
+  background: linear-gradient(45deg, #FFAFBD 30%, #ffc3a0 70%);
   color: #000000;
 }
+
 .main-container{
   width: 100%;
   height: auto;
-  color: #fff;
+  color: #221f1f;
   text-align: center;
   margin-top: 30px;
 }
+
 .main-container h4{
   font-size: 25px;
   font-weight: 900;
 }
+
 .main-container .temperature-range h6{
-  font-size: 15px;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 360px){
+  .search-form input{
+    width: 60%;
+  }
+  .search-form button{
+    width: 37%;
+  }
+}
+@media only screen and (min-width: 470px){
+  .search-form input{
+    width: 55%;
+  }
+  .search-form button{
+    width: 30%;
+  }
 }
 @media only screen and (min-width: 600px){
   .search-form input{
-    width: 70%;
+    width: 60%;
   }
   .search-form button{
     width: 25%;
   }
 }
-@media only screen and (max-width: 600px){
+@media only screen and (min-width: 770px){
   .search-form input{
-    width: 70%;
-  }
-  .search-form button{
-    width: 25%;
-  }
-}
-@media only screen and (min-width: 768px){
-  .search-form input{
-    width: 80%;
+    width: 60%;
   }
   .search-form button{
     width: 18%;
   }
 }
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 990px){
   .search-form input{
-    width: 80%;
+    width: 65%;
   }
   .search-form button{
-    width: 18%;
+    width: 17%;
   }
 }
 @media only screen and (min-width: 1200px){
   .search-form input{
-    width: 90%;
+    width: 65%;
   }
   .search-form button{
-    width: 12%;
+    width: 13%;
   }
 }
+
 .temp h1{
   font-size: 30px;
   font-weight: 900;
+  color: #0728ca;
 }
+
 .place h3{
-  font-size: 25px;
+  font-size: 30px;
 }
+
 .place h3 i{
   margin-right: 10px;
   animation: locationicon 2s infinite;
 }
+
 @keyframes locationicon{
   0%{
     transform: rotateY(0deg);

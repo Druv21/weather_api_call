@@ -28,7 +28,7 @@ function App() {
        <h2 className="title"><i className="fa fa-cloud"></i> Weather App</h2>
        <div className="search-form"> 
          <input type="text" placeholder="Enter your city name" value={input} onChange={(event)=>{setInput(event.target.value)}}/>
-         <button type="button" onClick={()=>getData()}>Search</button>
+         <span  className="btn"><button type="button" onClick={()=>getData()}>Search</button></span>
        </div>
        <div className="main-container">
          <h4>Live Weather Condition</h4>
