@@ -1,15 +1,15 @@
 .App {
   text-align: center;
-  margin-top: 5%;
+  margin-top: 3%;
   padding-top: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .details{
-  width: 50%; 
+  width: 65%; 
   height: 70%;
   margin: auto;
-  margin-top: 1%; 
+  margin-bottom: 3%; 
   background: url("https://miro.medium.com/max/2560/1*GsImz-edoeuqCMfKxDus0w.jpeg");
   background-size: cover;
   box-shadow: 0px 1px 0px 1px #000;
@@ -17,8 +17,12 @@
   padding: 10px;
 }
 
+.title i{
+  color: rgb(49, 46, 46);
+}
+
 .title{
-  color: #1433ca;
+  color: #221f1f;
   font-weight: 700;
   font-size: 35px;
 }
@@ -108,7 +112,7 @@
 }
 @media only screen and (min-width: 990px){
   .search-form input{
-    width: 65%;
+    width: 60%;
   }
   .search-form button{
     width: 17%;
@@ -116,7 +120,7 @@
 }
 @media only screen and (min-width: 1200px){
   .search-form input{
-    width: 65%;
+    width: 60%;
   }
   .search-form button{
     width: 13%;
